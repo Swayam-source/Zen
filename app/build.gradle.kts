@@ -284,7 +284,6 @@ val newPipeExtractorRaw: Configuration by configurations.creating {
     isCanBeConsumed = false
 }
 dependencies {
-    implementation("com.microsoft.onnxruntime:onnxruntime-android:1.22.0")
     newPipeExtractorRaw("com.github.TeamNewPipe:NewPipeExtractor:v0.26.3")
 }
 val newPipeExtractorStripped = tasks.register<org.gradle.api.tasks.bundling.Jar>(
